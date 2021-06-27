@@ -1,6 +1,221 @@
 .continer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh auto;
+  max-width: 33rem;
+  min-height: 60rem;
+  overflow: hidden;
 }
 
+.article-preview {
+  display: grid;
+  grid-template-rows: 22rem 1fr;
+}
+
+.article-image {
+  width: 33rem;
+  height: 22rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.article {
+  &-info {
+    background-color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  &-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+    padding: 4rem 3rem 0rem 3rem;
+  }
+  &-description {
+    font-size: 1.5rem;
+    color: $desaturated-dark-blue;
+    padding: 0rem 3rem 1rem 3rem;
+  }
+}
+
+.article-profile {
+  display: none;
+  animation: slideIn 0.5s ease-in both;
+  &.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 0rem 3rem 1.2rem 3rem;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    &-avatar {
+      img {
+        width: 4.5rem;
+        border-radius: 50%;
+      }
+    }
+    &-information {
+      margin-left: 1.5rem;
+      margin-top: -10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+    }
+    &-date {
+      font-size: 1.4rem;
+      color: $desaturated-dark-blue;
+    }
+  }
+}
+
+.share-btn {
+  background-color: $light-grayish-blue;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  align-self: center;
+  img {
+    margin-top: 25%;
+    margin-left: 6%;
+  }
+}
+.share-options {
+  display: none;
+  animation: slideIn 0.5s ease-in both;
+  &.active {
+    background-color: $very-dark-grayish-blue;
+    margin-top: 1.5rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  div:not(:last-child) {
+    margin-right: 1.8rem;
+  }
+  div:not(:first-child) {
+    cursor: pointer;
+  }
+  .share-label {
+    color: $grayish-blue;
+    font-size: 1.4rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .share-btn {
+    margin-left: auto;
+    background-color: $desaturated-dark-blue;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
 /* DESKTOP */
 @media (min-width: 1060px) {
+  .continer {
+    margin: 10vh auto;
+    max-width: 65rem;
+    overflow: visible;
+  }
+
+  .article-preview {
+    display: grid;
+    grid-template-columns: 27rem 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 18px;
+  }
+
+  .article-image {
+    border-bottom-left-radius: 1rem;
+    height: 27rem;
+  }
+
+  .article {
+    &-info {
+      position: relative;
+    }
+    &-title {
+      font-size: 1.9rem;
+      padding: 3.5rem 3rem 0rem 3rem;
+    }
+  }
+  .article {
+    &-info {
+      border-bottom-left-radius: 0rem;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+  }
+  .article-description {
+    font-size: 1.2rem;
+  }
+  .article-profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    margin-top: 0.5rem;
+    animation: none;
+    &.active {
+      display: flex;
+    }
+  }
+  .share-options {
+    display: none;
+    position: absolute;
+    bottom: 94px;
+    right: -75px;
+    animation: fadeIn 0.2s ease-in both;
+    div:last-child {
+      display: none;
+    }
+    &.active {
+      border-bottom-left-radius: 0rem;
+      padding: 1.5rem 2rem 1.5rem 3rem;
+      border-radius: 1rem;
+    }
+    &:after {
+      content: "";
+      margin: 9px 0.5rem 2px 0.5rem;
+      display: inline-block;
+      border: 11px solid transparent;
+      border-top: 12px solid $very-dark-grayish-blue;
+      border-bottom: 0 none;
+      position: absolute;
+      top: 44px;
+      right: 104px;
+    }
+  }
+}
+
+// ANIMATIONS
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

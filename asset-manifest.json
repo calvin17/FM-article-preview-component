@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/FM-article-preview-component/static/css/main.963daeb4.chunk.css",
+    "main.js": "/FM-article-preview-component/static/js/main.c7bbcc6d.chunk.js",
+    "main.js.map": "/FM-article-preview-component/static/js/main.c7bbcc6d.chunk.js.map",
+    "runtime-main.js": "/FM-article-preview-component/static/js/runtime-main.b53c37e9.js",
+    "runtime-main.js.map": "/FM-article-preview-component/static/js/runtime-main.b53c37e9.js.map",
+    "static/js/2.318e8d1b.chunk.js": "/FM-article-preview-component/static/js/2.318e8d1b.chunk.js",
+    "static/js/2.318e8d1b.chunk.js.map": "/FM-article-preview-component/static/js/2.318e8d1b.chunk.js.map",
+    "static/js/3.c45b0335.chunk.js": "/FM-article-preview-component/static/js/3.c45b0335.chunk.js",
+    "static/js/3.c45b0335.chunk.js.map": "/FM-article-preview-component/static/js/3.c45b0335.chunk.js.map",
+    "index.html": "/FM-article-preview-component/index.html",
+    "static/css/main.963daeb4.chunk.css.map": "/FM-article-preview-component/static/css/main.963daeb4.chunk.css.map",
+    "static/js/2.318e8d1b.chunk.js.LICENSE.txt": "/FM-article-preview-component/static/js/2.318e8d1b.chunk.js.LICENSE.txt",
+    "static/media/drawers.631135b0.jpg": "/FM-article-preview-component/static/media/drawers.631135b0.jpg",
+    "static/media/icon-facebook.1e9b3338.svg": "/FM-article-preview-component/static/media/icon-facebook.1e9b3338.svg",
+    "static/media/icon-pinterest.45264b1d.svg": "/FM-article-preview-component/static/media/icon-pinterest.45264b1d.svg",
+    "static/media/icon-share.890102fe.svg": "/FM-article-preview-component/static/media/icon-share.890102fe.svg",
+    "static/media/icon-twitter.45735e3b.svg": "/FM-article-preview-component/static/media/icon-twitter.45735e3b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b53c37e9.js",
+    "static/js/2.318e8d1b.chunk.js",
+    "static/css/main.963daeb4.chunk.css",
+    "static/js/main.c7bbcc6d.chunk.js"
+  ]
+}
